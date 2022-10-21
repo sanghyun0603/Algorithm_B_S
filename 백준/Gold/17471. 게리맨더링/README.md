@@ -22,38 +22,7 @@
 
 <p>아래는 백준시를 두 선거구로 나눈 4가지 방법이며, 가능한 방법과 불가능한 방법에 대한 예시이다.</p>
 
-<table class="table table-bordered" style="width: 100%;">
-	<tbody>
-		<tr>
-			<td style="width: 25%; text-align: center;"><img alt="" src="" style="width: 220px; height: 195px;"></td>
-			<td style="width: 25%; text-align: center;"><img alt="" src="" style="width: 220px; height: 195px;"></td>
-			<td style="width: 25%; text-align: center;"><img alt="" src="https://upload.acmicpc.net/f5dd6143-c013-46d3-ba4c-dadc48bdf5bc/-/preview/" style="width: 220px; height: 195px;"></td>
-			<td style="width: 25%; text-align: center;"><img alt="" src="" style="width: 220px; height: 195px;"></td>
-		</tr>
-		<tr>
-			<td style="width: 25%; text-align: center;">
-			<p>가능한 방법</p>
 
-			<p>[1, 3, 4]와 [2, 5, 6]으로 나누어져 있다.</p>
-			</td>
-			<td style="width: 25%; text-align: center;">
-			<p>가능한 방법</p>
-
-			<p>[1, 2, 3, 4, 6]과 [5]로 나누어져 있다.</p>
-			</td>
-			<td style="width: 25%; text-align: center;">
-			<p>불가능한 방법</p>
-
-			<p>[1, 2, 3, 4]와 [5, 6]으로 나누어져 있는데, 5와 6이 연결되어 있지 않다.</p>
-			</td>
-			<td style="width: 25%; text-align: center;">
-			<p>불가능한 방법</p>
-
-			<p>각 선거구는 적어도 하나의 구역을 포함해야 한다.</p>
-			</td>
-		</tr>
-	</tbody>
-</table>
 
 <p>공평하게 선거구를 나누기 위해 두 선거구에 포함된 인구의 차이를 최소로 하려고 한다. 백준시의 정보가 주어졌을 때, 인구 차이의 최솟값을 구해보자.</p>
 
