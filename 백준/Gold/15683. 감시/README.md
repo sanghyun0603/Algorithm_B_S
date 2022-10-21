@@ -14,24 +14,7 @@
 
 <p>스타트링크의 사무실은 1×1크기의 정사각형으로 나누어져 있는 N×M 크기의 직사각형으로 나타낼 수 있다. 사무실에는 총 K개의 CCTV가 설치되어져 있는데, CCTV는 5가지 종류가 있다. 각 CCTV가 감시할 수 있는 방법은 다음과 같다.</p>
 
-<table class="table table table-bordered" style="width: 100%;">
-	<tbody>
-		<tr>
-			<td style="width: 20%; text-align: center; vertical-align: middle;"><img alt="" src="https://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/problem/15683/1.png" style="width: 113px; height: 70px;"></td>
-			<td style="width: 20%; text-align: center;vertical-align: middle;"><img alt="" src="" style="width: 156px; height: 70px;"></td>
-			<td style="width: 20%; text-align: center;vertical-align: middle;"><img alt="" src="" style="width: 100px; height: 100px;"></td>
-			<td style="width: 20%; text-align: center;vertical-align: middle;"><img alt="" src="" style="width: 138px; height: 100px;"></td>
-			<td style="width: 20%; text-align: center;vertical-align: middle;"><img alt="" src="" style="width: 149px; height: 150px;"></td>
-		</tr>
-		<tr>
-			<td style="width: 20%; text-align: center;">1번</td>
-			<td style="width: 20%; text-align: center;">2번</td>
-			<td style="width: 20%; text-align: center;">3번</td>
-			<td style="width: 20%; text-align: center;">4번</td>
-			<td style="width: 20%; text-align: center;">5번</td>
-		</tr>
-	</tbody>
-</table>
+
 
 <p>1번 CCTV는 한 쪽 방향만 감시할 수 있다. 2번과 3번은 두 방향을 감시할 수 있는데, 2번은 감시하는 방향이 서로 반대방향이어야 하고, 3번은 직각 방향이어야 한다. 4번은 세 방향, 5번은 네 방향을 감시할 수 있다.</p>
 
