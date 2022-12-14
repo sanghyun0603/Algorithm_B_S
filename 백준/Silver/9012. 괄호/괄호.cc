@@ -1,45 +1,40 @@
+
 #include <iostream>
-#include <stack>
 #include <string>
 using namespace std;
 
 int main(void)
 {
-	int N;
-	cin >> N;
-	for (int k = 0; k < N; k++)
+	int T;
+	cin >> T;
+	for (int i = 0; i < T; i++)
 	{
-		stack <char> s;
-		string inp;
-		cin >> inp;
-		for (int i = 0; i < inp.length(); i++)
+		int top = 0;
+		string s;
+		cin >> s;
+		for (int j = 0; j < s.length(); j++)
 		{
-			if (inp[i] == '(')
+			if (s[j] == '(')
 			{
-				s.push(inp[i]);
+				top += 1;
 			}
-			else
+			else if (s[j] == ')')
 			{
-				if (s.empty() || s.top() != '(')
-				{
-					s.push(inp[i]);
-					break;
-				}
-				else
-				{
-					s.pop();
-				}
+				top -= 1;
+			}
+			if (top < 0)
+			{
+				break;
 			}
 		}
-		if (s.empty())
+		if (top == 0)
 		{
 			cout << "YES" << '\n';
-		}
+		} 
 		else
 		{
 			cout << "NO" << '\n';
 		}
 	}
-	
 	return 0;
 }
