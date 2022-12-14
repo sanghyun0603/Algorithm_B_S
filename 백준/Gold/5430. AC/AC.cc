@@ -2,9 +2,12 @@
 #include <deque>
 #include <string>
 using namespace std;
-
+//내가 미처 생각못한 부분 입력배열이 []이면 무조건 에러처리를 하였다.!!!
+// 입력배열이 []이어도 명령이 R만 있는 경우는 에러가 아니다!
+// 왜냐 문제 조건에서 비어있는 경우에 D를 하였을때만 에러라고 명시했기 때문이다.
 int main(void)
 {
+	ios_base::sync_with_stdio(false), cin.tie(NULL);
 	int T;
 	cin >> T;
 	for (int j = 0; j < T; j++)
