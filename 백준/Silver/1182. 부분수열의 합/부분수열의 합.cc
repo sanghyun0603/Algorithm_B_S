@@ -1,34 +1,35 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
+int N, S;
+int res = 0;
+// 백트래킹으로 해보자
+//  매번가면서 백하기.
+void bruteforce(int cnt, int sums, vector<int> &v)
+{
+    if (cnt == N)
+        return;
+    if (sums + v[cnt] == S)
+    {
+        res++;
+    }
+    bruteforce(cnt + 1, sums, v);
+    bruteforce(cnt + 1, sums + v[cnt], v);
+}
+
 int main()
 {
-    int N, S;
-    int arr[20] = {};
-    int temp = 0;
-    int cnt = 0;
+    int n;
+    vector<int> v;
     cin >> N >> S;
     for (int i = 0; i < N; i++)
     {
-        cin >> arr[i];
+        cin >> n;
+        v.push_back(n);
     }
-    for (int i = 1; i < (1 << N); i++)
-    {
-        temp = 0;
-        for (int j = 0; j < N; j++)
-        {
-            if (i & (1 << j))
-            {
-                temp += arr[j];
-            }
-        }
-        if (temp == S)
-        {
-            cnt++;
-        }
-    }
-
-    cout << cnt << '\n';
+    bruteforce(0, 0, v);
+    cout << res << '\n';
     return 0;
 }
